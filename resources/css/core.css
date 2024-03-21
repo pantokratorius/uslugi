@@ -1,0 +1,21 @@
+@font-face { font-family: "Play"; src: url("/fonts/play/Play-Regular.ttf"); }
+@font-face { font-family: "Genos"; src: url("/fonts/genos/static/Genos-Regular.ttf"); }
+@font-face { font-family: "Roboto"; src: url("/fonts/roboto/Roboto-Regular.ttf"); }
+@font-face { font-family: "NotoSans"; src: url("/fonts/noto-sans/NotoSans-Regular.ttf"); }
+@font-face { font-family: "Nunito"; src: url("/fonts/nunito/static/Nunito-Regular.ttf"); }
+@font-face { font-family: "Raleway"; src: url("/fonts/raleway/static/Raleway-Regular.ttf"); }
+.font-play {font-family: "Play", monospace;}
+.core-oh {overflow: hidden; text-overflow: ellipsis;}
+.core-embossed { text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);}
+.core-nw { white-space: nowrap; }
+.core-pointer {cursor: pointer;}
+.core-link {cursor: pointer; }
+.core-link:hover { text-decoration: underline; }
+
+.core-tab {display: table; height: 100%; table-layout: fixed; margin: 0 auto; padding: 0;}
+.core-tab > .header {display: table-row; height: 0;}
+.core-tab > .header > div {display: table-cell;}
+.core-tab > .main {display: table-row; height: 100%;}
+.core-tab > .main > div {display: table-cell;}
+.core-tab > .footer {display: table-row; height: 0;}
+.core-tab > .footer > div {display: table-cell;}

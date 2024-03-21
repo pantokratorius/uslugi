@@ -1,0 +1,54 @@
+.wins-hide {display: none;}
+.wins-pointer {cursor: pointer;}
+.wins-click {cursor: pointer;}
+.win-close {position: absolute; width:24px; height: 24px; text-align: center; top:0; right:0; cursor: pointer; color: black; font-size: 18px;}
+.win-close:hover {color: red;}
+.wins-nw {white-space: nowrap;}
+.wins-max-48 {max-width: 48px;}
+.wins-w48 {width: 48px;}
+.wins-w32 {width: 32px;}
+.wins-max-900 {max-width: 900px;}
+.wins-max-1000 {max-width: 1000px;}
+.wins-max-1100 {max-width: 1100px;}
+.wins-max-1200 {max-width: 1200px;}
+.wins-max-1300 {max-width: 1300px;}
+.wins-wh-100 {width: 100%; height: 100%;}
+
+.win-bg-tr25-white {background: rgba(255, 255, 255, 0.25);}
+.win-bg-tr50-white {background: rgba(255, 255, 255, 0.5);}
+.win-bg-tr80-white {background: rgba(255, 255, 255, 0.8);}
+
+.win-bg-tr25-black {background: rgba(0, 0, 0, 0.25);}
+.win-bg-tr50-black {background: rgba(0, 0, 0, 0.5);}
+.win-bg-tr50-black {background: rgba(0, 0, 0, 0.75);}
+
+.wins-p3 {padding: 3px;}
+.wins-p5 {padding: 5px;}
+
+.wins-m3 {margin: 3px;}
+.wins-m5 {margin: 5px;}
+.wins-p10 {padding: 10px;}
+.wins-va-md {vertical-align: middle;}
+.wins-btn-sq {display: inline-block; cursor: pointer; padding: 1px 5px;}
+
+
+.wins-window {position: absolute; left:0; top:0; width:100%; height:100%;}
+
+.wins-cont-full {display: table; width: 100%; height: 100%; table-layout: fixed; margin: 0 auto; padding: 0;}
+.wins-cont-full > .wins-header {display: table-row;}
+.wins-cont-full > .wins-center {display: table-row; width: 100%; height: 100%;}
+.wins-cont-full > .wins-footer {display: table-row;}
+.wins-cont-full .wins-inner {display: table-cell;}
+
+
+.wins-full {display: table; width: 100%; height: 100%; table-layout: fixed; margin: 0 auto; padding: 0;}
+.wins-full > .wins-header {display: table-row;}
+.wins-full > .wins-center {display: table-row; width: 100%; height: 100%;}
+.wins-full > .wins-footer {display: table-row;}
+.wins-full .wins-inner {display: table-cell; vertical-align: middle;}
+.wins-full .wins-inner-cont {height: 100%; max-height: 100%;}
+
+.wins-normal {display: table; width: auto; height: 100%; margin:0 auto;}
+.wins-normal > .wins-center {display: table-row; width: 100%;}
+.wins-normal .wins-inner {display: table-cell; vertical-align: middle;}
+.wins-normal .wins-inner-cont {height: auto; max-height: 100%;}
