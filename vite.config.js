@@ -6,7 +6,6 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/css/app.css',
-                'resources/css/bootstrap-icons.css',
                 'resources/css/core.css',
                 'resources/css/wins.css',
 

@@ -4,8 +4,9 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 
 Route::get('/', function () {
+    
     return view('welcome');
-});
+})->name('home');
 
 
 
@@ -16,6 +17,6 @@ Route::get('/{locale}', function (string $locale) {
     }
 
     App::setLocale($locale);
-    return view('welcome');
+    return view('welcome', compact('locale'));
     // ...
-})->name('home');
+})->name('home_loc');

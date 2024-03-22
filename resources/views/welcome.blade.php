@@ -7,6 +7,7 @@
     <title>Добро пожаловать на WBCentrum.nl</title>
     <meta name="description" content="Центр обучения в Нидерландах. VCA курсы">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap-icons.css') }}">
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css') }}">
     <script src="{{asset('assets/js/jquery.min.js') }}"></script>
     <script src="{{asset('assets/js/jquery.mask.min.js') }}"></script>
@@ -16,7 +17,6 @@
 
 @vite( [
     'resources/css/app.css',
-    'resources/css/bootstrap-icons.css',
     'resources/css/core.css',
     'resources/css/wins.css',
 
@@ -104,15 +104,15 @@
         <div style="display:table-row;height:100%;">
             <div style="display:table-cell; vertical-align:middle;height:100%; text-align: center;">
                 <div class="py-4">
-                    <a href="https://wbcentrum.nl/?lng=ru&amp;view=home">
+                    <a href="{{route('home', $locale ?? '')}}">
                         <img class="img-sh-white" style="border: 1px solid white; width: 256px; height: auto; border-radius:50%;" src="{{ Vite::asset('resources/images/wbc_512.png') }}" alt="WB Centrum">
                     </a>
                 </div>
                 <div><div class="w-100 my-2">
-    <a href="{{ route('home', 'en') }}" class="butt-lng butt-en btn"><img src="{{ Vite::asset('resources/images/gb.png') }}" alt="" class="rect36 rounded-circle"></a>
-    <a href="{{ route('home', 'ro') }}" class="butt-lng butt-ro btn"><img src="{{ Vite::asset('resources/images/ro.png') }}" alt="" class="rect36 rounded-circle"></a>
-    <a href="{{ route('home', 'ru') }}" class="butt-lng butt-ru btn "><img src="{{ Vite::asset('resources/images/ru.png') }}" alt="" class="rect36 rounded-circle"></a>
-    <a href="{{ route('home', 'lt') }}" class="butt-lng butt-lt btn "><img src="{{ Vite::asset('resources/images/lt.png') }}" alt="" class="rect36 rounded-circle"></a>
+    <a href="{{ route('home') }}" class="butt-lng butt-en btn"><img src="{{ Vite::asset('resources/images/gb.png') }}" alt="" class="rect36 rounded-circle"></a>
+    <a href="{{ route('home_loc', 'ro') }}" class="butt-lng butt-ro btn"><img src="{{ Vite::asset('resources/images/ro.png') }}" alt="" class="rect36 rounded-circle"></a>
+    <a href="{{ route('home_loc', 'ru') }}" class="butt-lng butt-ru btn "><img src="{{ Vite::asset('resources/images/ru.png') }}" alt="" class="rect36 rounded-circle"></a>
+    <a href="{{ route('home_loc', 'lt') }}" class="butt-lng butt-lt btn "><img src="{{ Vite::asset('resources/images/lt.png') }}" alt="" class="rect36 rounded-circle"></a>
 </div>
 </div>
                 <span class="fs-5 text-white text-uppercase font2 wide-3">{{ __('Центр обучения в Нидерландах') }} </span>
