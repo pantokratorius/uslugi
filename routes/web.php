@@ -1,22 +1,26 @@
 <?php
 
+use App\Http\Middleware\ChooseLang;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 
-Route::get('/', function () {
+
+Route::middleware([ChooseLang::class])->group(function () {
+    Route::get('/', function () {
+        return view('welcome');
+    })->name('home');
     
-    return view('welcome');
-})->name('home');
+    
+    Route::get('lang/{locale}', function (string $locale) {  
+        session()->put('locale', $locale);
+        App::setLocale($locale);
+        return redirect()->back();
+    })->name('lang');
+    
+    
+    Route::get('contacts', function () {
+        return view('contacts');
+    
+    })->name('contacts');
+});
 
-
-
-
-Route::get('/{locale}', function (string $locale) {
-    if (! in_array($locale, ['en', 'lt', 'ru', 'ro'])) {
-        abort(400);
-    }
-
-    App::setLocale($locale);
-    return view('welcome', compact('locale'));
-    // ...
-})->name('home_loc');
