@@ -555,7 +555,8 @@ $bb = json_decode(
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script>$( function() { $( "#datepicker" ).datepicker({
     dateFormat: "dd.mm.yy", changeMonth: true, changeYear: true, yearRange: `1950:${new Date().getFullYear()}`
-    });});
+    })
+    });
 </script>
 @endpush
 
@@ -581,7 +582,7 @@ $bb = json_decode(
                 <input type="text" name="phone" placeholder="Tel" />
             </li>
             <li>
-                <input type="text" id="datepicker" name="birthdate" placeholder="Birth date" />
+                <input type="text" id="datepicker" name="birthdate" placeholder="Birth date" autocomplete="off" />
             </li>
         </ul>
 
