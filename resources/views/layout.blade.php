@@ -13,7 +13,7 @@
     <script src="{{asset('assets/js/jquery.mask.min.js') }}"></script>
     <script src="{{asset('assets/js/bootstrap.min.js') }}"></script>
     <script src="{{asset('assets/js/anime.min.js') }}"></script>
-
+@stack('headscripts')
 
 @vite( [
     'resources/css/app.css',
