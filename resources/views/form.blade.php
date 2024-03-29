@@ -552,13 +552,10 @@ $bb = json_decode(
 
 @push('headscripts')
 <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css">
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-<script>
-$( function() {
-  $( "#datepicker" ).datepicker();
-} );
+<script>$( function() { $( "#datepicker" ).datepicker({
+    dateFormat: "dd.mm.yy", changeMonth: true, changeYear: true, yearRange: `1950:${new Date().getFullYear()}`
+    });});
 </script>
 @endpush
 
