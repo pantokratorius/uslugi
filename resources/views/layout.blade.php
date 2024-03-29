@@ -119,19 +119,19 @@
                 <div class="border-bottom w-75 mx-auto">&nbsp;</div>
                 <div><div class="w-100 my-2">
     <a href="{{ route('home') }}" class="m-2 butt-nav-home btn btn-sm btn-primary disabled border-0"><i class="bi bi-house mx-1"></i></a>
-    <a href="#" class="m-2 butt-nav-vca-basis btn btn-sm btn-primary"><i class="bi bi-book me-2"></i>{{__('Стать клиентом')}}</a>
+    <a href="{{route('form') }}" class="m-2 butt-nav-vca-basis btn btn-sm btn-primary"><i class="bi bi-book me-2"></i>{{__('Стать клиентом')}}</a>
     <a href="{{route('contacts')}}" class="m-2 butt-nav-contacts btn btn-sm btn-primary"><i class="bi bi-info-circle me-2"></i>{{__('Контакты')}}</a>
 
 
 </div>
 <script>$('.butt-nav-home').addClass("disabled border-0");</script></div>
-       @yield('content')          
+       @yield('content')
     </div>
         </div>
 
     </div>
 
 
-
-
+@stack('styles')
+@stack('scripts')
 </body></html>
