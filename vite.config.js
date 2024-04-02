@@ -8,6 +8,7 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/css/core.css',
                 'resources/css/wins.css',
+                'resources/css/jqueryui.css',
 
                 'resources/js/app.js',
                 'resources/js/base64.js',
@@ -15,6 +16,7 @@ export default defineConfig({
                 'resources/js/popper.js',
                 'resources/js/utils.js',
                 'resources/js/wins.js',
+                'resources/js/jqueryui.js',
             ],
             refresh: true,
         }),
