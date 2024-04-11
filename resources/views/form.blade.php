@@ -555,7 +555,7 @@ $langs = [
 
 @endphp
 
-@push('headscripts')
+
 @vite(['resources/js/jqueryui.js', 'resources/css/jqueryui.css'])
 {{-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> --}}
 {{-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> --}}
@@ -564,40 +564,28 @@ $langs = [
     })
     });
 </script>
-@endpush
 
-@extends('layout')
 
-@section('content')
+
 <form name="test" id="test">
     @csrf
-        <ul>
-            <li>
-                <select>
-                    <option value="">-Select-</option>
-                    <option value="Mr.">Mr.</option>
-                    <option value="Mrs.">Mrs.</option>
-                    <option value="Ms.">Ms.</option>
-                </select>
-                <input type="text" name="surname" placeholder="Surname" />
-                <input type="text" name="name" placeholder="Name" />
-            </li>
-            <li>
+                <div class="flex">
+                    <select>
+                        <option value="">-Select-</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        <option value="Ms.">Ms.</option>
+                    </select>
+                    <input type="text" name="surname" placeholder="Surname" />
+                    <input type="text" name="name" placeholder="Name" />
+                </div>
                 <input type="email" name="email" placeholder="E-mail" />
                 <input type="text" name="phone" placeholder="Tel" />
-            </li>
-            <li>
                 <input type="text" id="datepicker" name="birthdate" placeholder="Birth date" autocomplete="off" />
-            </li>
-            <li>
                 <input type="text" name="street" placeholder="Street and house No"  />
-            </li>
-            <li>
                 <h4>Address</h4>
                 <input type="text" name="city" placeholder="City"  />
                 <input type="text" name="postal" placeholder="Postcode"  />
-            </li>
-            <li>
                 <select name="country">
                     <option value="-Select-">-Select-</option>
 
@@ -605,25 +593,15 @@ $langs = [
                     <option value="{{ $v }}" ctrycode="{{ $bb->$k }}" lwrvalue="{{ strtolower($v) }}">{{ $v }}</option>
                     @endforeach
                 </select>
-            </li>
-            <li>
                 <h4>Languages that you speak</h4>
                 @foreach ($langs as $k=>$v)
                 <p><label><input type="checkbox" name="{{ $v }}" /> {{ $v }}</label></p>
                 @endforeach
-            </li>
-            <li>
                 <h4>Your company</h4>
-            </li>
-            <li>
                 <input type="text" name="street" placeholder="Street and house No"  />
-            </li>
-            <li>
                 <h4>Company address</h4>
                 <input type="text" name="companycity" placeholder="City"  />
                 <input type="text" name="companypostal" placeholder="Postcode"  />
-            </li>
-            <li>
                 <select name="companycountry">
                     <option value="-Select-">-Select-</option>
 
@@ -631,16 +609,10 @@ $langs = [
                     <option value="{{ $v }}" ctrycode="{{ $bb->$k }}" lwrvalue="{{ strtolower($v) }}">{{ $v }}</option>
                     @endforeach
                 </select>
-            </li>
-            <li>
                 <input type="text" name="kvk" placeholder="KvK number" />
                 <input type="text" name="bwt" placeholder="BTW number" />
-            </li>
-            <li>
                 <h4>Please describe what kind of services you need</h4>
                 <textarea name="description" cols="50"></textarea>
-            </li>
-        </ul>
 
         <ul class="tempHeadBdr formRelative">
             <li class="tempHeadContBdr"><span id="logo-formheader" class="formLogo" style="display: none"><img
@@ -1499,9 +1471,7 @@ $langs = [
 </form>
 
 
-@endsection
 
-@push('styles')
     <style>
         ul {
             list-style: none;
@@ -1527,4 +1497,3 @@ $langs = [
             display: none;
         }
     </style>
-@endpush

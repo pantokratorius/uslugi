@@ -9,6 +9,9 @@ export default defineConfig({
                 'resources/css/core.css',
                 'resources/css/wins.css',
                 'resources/css/jqueryui.css',
+                'resources/css/jqueryui.css',
+                'resources/css/style2.css',
+                'resources/css/normalize.css',
 
                 'resources/js/app.js',
                 'resources/js/base64.js',
