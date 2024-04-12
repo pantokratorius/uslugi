@@ -6,7 +6,7 @@
     <div class="fs-content">
         <div class="fs-content-block wrap">
             <div class="fs-block-left">
-                 <h1 class="fs-title">Бухгалтерские услуги</h1>
+                 <h1 class="fs-title">{{__('Бухгалтерские услуги')}}</h1>
                  <div class="wrap_flex">
                     <div>
                         <p class="fs-subtitle">Индивидуальный подход к каждому клиенту</p>

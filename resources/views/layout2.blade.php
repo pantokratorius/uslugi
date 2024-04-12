@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{-- <link rel="icon" type="image/svg+xml" href="https://uslugidon.ru/img/favicon.svg"> --}}
-    <title>Бухгалтерские услуги Новороссийск — Аутсорсинг бухгалтерских услуг</title>
+    <title>Бухгалтерские услуги  — Аутсорсинг бухгалтерских услуг</title>
     <meta name="description" content="Оказываем ведение бухгалтерского учета для ИП и ООО, профессиональные бухгалтерские услуги Новороссийск под ключ, удалённый аутсорсинг бухгалтерских услуг">
     <meta name="keywords" content="аутсорсинг,бухгалтерские услуги новороссийск,бух услуги новороссийск,аутсорсинг бухгалтерских услуг,бухгалтерский аутсорсинг,услуги бухгалтера">
     <meta property="og:title" content="Бухгалтерские услуги Новороссийск — Аутсорсинг бухгалтерских услуг">
@@ -51,15 +51,15 @@
                 </div>
 
                 <div class="header-top-menu">
-<ul class="menu">
+<ul class="menu"> 
                             <li><a href="{{route('home')}}" @if(Request::path() == '/') class="active"@endif>Главная</a></li>
                             <li><a href="{{route('home')}}#contacts">Стать клиентом</a></li>
                             <li><a href="{{ route('contacts') }}" @if(Request::path() == 'contacts') class="active"@endif>Контакты</a></li>
-                            <select>
-                                <option>RU</option>
-                                <option>EN</option>
-                                <option>RO</option>
-                                <option>LT</option>
+                            <select id="select_language">
+                                <option value="{{ route('lang', 'ru') }}" @if(Lang::locale()== 'ru') selected @endif>RU</option>
+                                <option value="{{ route('lang', 'en') }}" @if(Lang::locale()== 'en') selected @endif>EN</option>
+                                <option value="{{ route('lang', 'ro') }}" @if(Lang::locale()== 'ro') selected @endif>RO</option>
+                                <option value="{{ route('lang', 'lt') }}" @if(Lang::locale()== 'lt') selected @endif>LT</option>
                             </select>
                     </ul>	
 
@@ -96,7 +96,13 @@
         </div>
     </section>
 	
+<script>
 
+    $('#select_language').change(function(){
+        location.href = $(this).val()
+    })
+
+</script>
 
 
 
