@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\App;
 
 
 Route::middleware([ChooseLang::class])->group(function () {
-    Route::get('/', function () {
+    Route::match(['GET', 'POST'],'/', function () {
         return view('home');
     })->name('home');
 

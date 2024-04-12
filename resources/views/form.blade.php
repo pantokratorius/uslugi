@@ -567,7 +567,7 @@ $langs = [
 
 
 
-<form name="test" id="test" method="POST">
+<form action="{{route('home')}}" name="test" id="test" method="POST">
     @csrf
     <h4>Personal data</h4>
                 <div class="flex">
