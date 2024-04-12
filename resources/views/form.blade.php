@@ -642,8 +642,13 @@ $langs = [
 
 
 
-    {{-- <style>
-        ul {
+    <style>
+
+label {
+    display: inline;
+}
+
+        /* ul {
             list-style: none;
             display: flex;
             flex-direction: column;
@@ -665,5 +670,5 @@ $langs = [
 
         .sr-only {
             display: none;
-        }
-    </style> --}}
+        } */
+    </style>
