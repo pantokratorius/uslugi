@@ -628,7 +628,7 @@ $langs = [
                 </div>
                 <div>
                     <h4>Please describe what kind of services you need</h4>
-                    <textarea name="description" cols="50" rows="5"></textarea>
+                    <textarea name="description"  rows="5"></textarea>
                 </div>
                 <div class="flex">
                     <p>Отправляя форму вы соглашаетесь с <a href="{{route('policy')}}" target="_blank" >политикой конфиденциальности</a></p>
