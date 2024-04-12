@@ -567,7 +567,7 @@ $langs = [
 
 
 
-<form name="test" id="test">
+<form name="test" id="test" method="POST">
     @csrf
     <h4>Personal data</h4>
                 <div class="flex">
