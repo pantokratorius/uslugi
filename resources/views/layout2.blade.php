@@ -55,6 +55,12 @@
                             <li><a href="{{route('home')}}" @if(Request::path() == '/') class="active"@endif>Главная</a></li>
                             <li><a href="{{route('home')}}#contacts">Стать клиентом</a></li>
                             <li><a href="{{ route('contacts') }}" @if(Request::path() == 'contacts') class="active"@endif>Контакты</a></li>
+                            <select>
+                                <option>RU</option>
+                                <option>EN</option>
+                                <option>RO</option>
+                                <option>LT</option>
+                            </select>
                     </ul>	
 
 </div> 

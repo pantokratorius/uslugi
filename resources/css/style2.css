@@ -139,6 +139,16 @@ body, html {
     align-items: center;
 }
 
+.menu select {
+  margin-left: 20px;
+  border: none;
+  outline: none;
+}
+
+.menu select option {
+  border: none;
+}
+
 .menu li a {
     padding: 10px;
    /* text-transform: uppercase;*/
