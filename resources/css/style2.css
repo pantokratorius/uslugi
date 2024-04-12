@@ -40,10 +40,10 @@ aside, nav, footer, header, section, main {
 	display: block;
 }
 
-h1, h3, h4, h5, h6, p {
+/* h1, h3, h4, h5, h6, p {
     font-size: inherit;
 	font-weight: inherit;
-}
+} */
 
 ul, ul li {
 	list-style: none;
@@ -142,7 +142,7 @@ body, html {
 .menu li a {
     padding: 10px;
    /* text-transform: uppercase;*/
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1rem;
     color: #112336;
 }
@@ -280,7 +280,7 @@ body, html {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
  }
 
  h2 {
@@ -422,6 +422,10 @@ body, html {
    .btn-qviz {
 	   margin-bottom: 20px;
       }
+
+      .header-top-menu .active {
+        font-weight: 700;
+      }
 	  
 
 /* CONTACT */
@@ -477,23 +481,44 @@ input {
   border-radius: 6px; 
   display: block;
   width: 92%;
-  padding: 15px 20px;
+  padding: 10px 15px;
   margin-bottom: 1rem;
 }
 
+form h4 {
+  margin-bottom: 10px;
+}
+
+form #submit {
+  width: 150px;
+  /* float: right; */
+}
+
+form textarea {
+  border: 1px solid;
+}
 
 form .flex {
   display: flex;
+  justify-content: space-between;
+}
+
+form div {
+  margin-bottom: 40px;
 }
 
 form .flex input:not(:last-child) {
   margin-right: 5%;
 }
 
-form .flex select {
+select {
   margin-right: 50px;
   border: 1px solid;
   border-radius: 5px;
+}
+
+form .flex select {
+  margin-right: 50px;
 }
 
 

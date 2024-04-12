@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\App;
 
 Route::middleware([ChooseLang::class])->group(function () {
     Route::get('/', function () {
-        return view('welcome');
+        return view('home');
     })->name('home');
 
 
@@ -22,6 +22,11 @@ Route::middleware([ChooseLang::class])->group(function () {
         return view('contacts');
 
     })->name('contacts');
+
+    Route::get('policy', function () {
+        return view('policy');
+
+    })->name('policy');
 
     Route::get('form', function () {
         return view('form');
