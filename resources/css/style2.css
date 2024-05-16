@@ -791,6 +791,19 @@ form .flex select {
 
   @media (max-width: 768px) {
     /*header 768px*/
+
+    .wrap_flex {
+      flex-wrap: wrap;
+    }
+
+    .wrap_flex div {
+      flex: 100%;
+    }
+
+    .wrap_flex div:first-child{
+      margin-right: 0px;
+    }
+
 .fs-title {
       font-size: 2rem;
   }
