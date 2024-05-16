@@ -52,9 +52,9 @@
 
                 <div class="header-top-menu">
 <ul class="menu"> 
-                            <li><a href="{{route('home')}}" @if(Request::path() == '/') class="active"@endif>Главная</a></li>
-                            <li><a href="{{route('home')}}#contacts">Стать клиентом</a></li>
-                            <li><a href="{{ route('contacts') }}" @if(Request::path() == 'contacts') class="active"@endif>Контакты</a></li>
+                            <li><a href="{{route('home')}}" @if(Request::path() == '/') class="active"@endif>{{__('Главная')}}</a></li>
+                            <li><a href="{{route('home')}}#contacts">{{__('Стать клиентом')}}</a></li>
+                            <li><a href="{{ route('contacts') }}" @if(Request::path() == 'contacts') class="active"@endif>{{__('Контакты')}}</a></li>
                             <select id="select_language">
                                 <option value="{{ route('lang', 'ru') }}" @if(Lang::locale()== 'ru') selected @endif>RU</option>
                                 <option value="{{ route('lang', 'en') }}" @if(Lang::locale()== 'en') selected @endif>EN</option>

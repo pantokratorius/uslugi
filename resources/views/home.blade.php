@@ -20,7 +20,7 @@
                 </div>
             </div>
             
-            <a href="#contacts" class="link-button">Стать клиентом</a>
+            <a href="#contacts" class="link-button">{{__('Стать клиентом')}}</a>
         </div>
     </div>
 </section> 
